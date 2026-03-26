@@ -4,8 +4,7 @@
 This is an immersive, high-performance 3D portfolio website built with React, Three.js (@react-three/fiber), and Vite. It features a full-screen, pure-black design highlighting a high-fidelity holographic 3D character hero animation (Goku model) that tracks the user's mouse. The scene is illuminated by additive blending with a custom galaxy particle background and includes high-quality typography with smooth section transitions, heavily inspired by modern interactive aesthetic portfolios.
 
 ## Project Screenshot
-![Project Preview](https://via.placeholder.com/800x400?text=Goku+Portfolio+Animated)
-*(Note: Replace this URL with an actual screenshot of your running project)*
+![Project Preview](./app/src/assets/herobg.png)
 
 ## Project Structure
 ```text
