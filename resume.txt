@@ -1,0 +1,50 @@
+Nikhil Kumar
++91-9504443080|nikhilsingh.aarya@gmail.com |linkedin.com/in/nikhil-kumar-406217323 |github.com/viRAJ357 |
+kaggle.com/nikhilkumar8085
+Summary
+AI/ML Engineer with hands-on experience in building scalable machine learning systems, deep learning models, and
+real-time analytics solutions. Proven ability to improve model performance and deliver actionable insights using data-driven
+approaches. Skilled in MLOps, deployment, and end-to-end model lifecycle management.
+Education
+Centurion University BhubaneswarIndia
+B.Tech in AI & Data Science 2023 – 2027
+• CGP A:9.5
+Experience
+AI/ML Engineer January 2026 – Present
+Labmentrix Pvt Ltd Remote
+• DeepCSA T (Customer Satisfaction Prediction):Developed an Artificial Neural Network (ANN) to predict
+real-time CSAT scores utilizing 20+ support interaction features, enabling proactive service interventions.
+• Zomato Restaurant Analysis:Conducted extensive exploratory data analysis, sentiment analysis, and
+unsupervised clustering on restaurant metadata and user reviews to generate actionable business insights.
+• T ourism Experience Modeling:Analyzed multi-dimensional tourism and visitor datasets using machine
+learning techniques to extract geospatial patterns and experience metrics.
+Data AnalystAugust 2025 – November 2025
+Internship Studios Remote
+• Analyzed multi-domain datasets and generated comprehensive reports to improve decision-making efficiency.
+• Created interactive dashboards and visualizations using Excel and Power BI.
+• Conducted data cleaning, preprocessing, feature selection, and exploratory data analysis.
+• Generated robust insights and optimized data pipelines to support AI and Machine Learning modules.
+Projects
+Stock Market Prediction (LSTM)
+• Developed an LSTM-based model for time series stock price forecasting, improving prediction accuracy by 13%
+(RMSE reduction).
+• Utilized Yahoo Finance dataset alongside rigorous hyperparameter tuning and model evaluation.
+Brain MRI T umor Detection
+• Built CNN model achieving 92% accuracy on MRI tumor dataset.
+• Evaluated performance using precision, recall, and accuracy metrics.
+Heart Disease Prediction
+• Developed classification models using Logistic Regression, Random Forest, SVM, and XGBoost.
+• Performed exploratory data analysis and evaluated using ROC-AUC.
+Ocean T rash Detection
+• Implemented CNN-based classification system for marine waste detection.
+AI Crop Monitoring
+• Designed disease detection and soil moisture estimation models.
+Technical Skills
+Programming: Python, SQL
+AI/ML: Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, Feature Selection, Time Series
+Forecasting, Model Optimization
+Data T ools: Power BI, Excel, Pandas, Data Preprocessing, Data Pipelines
+MLOps & DevOps: MLflow, DVC, Docker, Kubernetes, Grafana, Prometheus, CI/CD pipelines, Model Evaluation,
+Model Deployment
+F rameworks: TensorFlow, PyTorch, Scikit-learn, FastAPI, Flask
+T ools: Git, GitHub, Firebase, Tableau, Linux, REST APIs

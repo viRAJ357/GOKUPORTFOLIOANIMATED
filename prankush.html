@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en" class="htmlStyle">
+
+<head>
+
+
+  
+  
+  
+  
+  
+  
+  <!-- <link rel="stylesheet" href="./CSS/cursor.css"> -->
+  
+  <!-- <script src="https://cdn.jsdelivr.net/npm/fluid-canvas@latest"></script> -->
+
+
+
+
+
+
+
+  <link rel="apple-touch-icon" sizes="57x57" href="data:image/png;base64,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2Ww2AFBV9fz58wMDA2JW4UtmlerswIEDzc3Np06dIoRIkhQOh/ft21dVVfXoo496PJ5169aNjY0lk8lYLFZfX+9yuQBAkqTOzs7u7u6VK1ca9kBExtjbb789ODjY3Nzs8XguXrw4Nja2ffv2lpaWbDYbCoUcDsfzzz/v9XoTiQSlFBERMZFIHDx4sL29nc96P/OdbwGA2Wy2WCwnTpyIRqOEEABwOp3xeLytrc3w4uHh4SVLlrz//vv79+8fGhqilH755ZeMMSHE8ePHBwcHJUk6e/Zsd3e34dEffPBBT0+Px+MJhUIDAwORSMTn8zHGDh061NHRAQDV1dWrVq0Kh8PGU9ntdl3XOzs7EZEQcvLkyfHx8ZxvXROzjCfL8SnXY5CSEGJQ2ThNw5zG0xudBoWMkDJ9KUmSDA5wzhVFQUQjqBlbmEwmXdc1TSOETN9uBpI5csHit9kx/+7VLjjvD8n0Nk0ye78ZndNT6PxNmH+sNptNURTGWDKZZIwZOIxOIUQymdR13Wq1yrKcTCYppVardXJyUtO0xdavhJCXX365tbX13XffbWlpcTgchhvt2LGjtbX1zTffrKys1DRt48aNBw8eLC8v37Rp01tvvbV06VI+z8+vecSKiOXl5aOjo+3t7Vu3bm1sbGSMAcA999xDCDl27Fg8HkfEwcHBe++9d+3atcFgUJKkS5cu3TINyG26RSQSOXLkSDweLy8vz2kgv9/f2NhosVgQMRQKhcPhxx57rLa29pNPPkkkEncGKwB4PJ6HH37Y5XINDQ3luNHX1/fee+9NTEwQQhKJREdHR319vdvtPnHihBC3LsZvC2ssFquqqtq+ffvRo0c/+ugjI7vG43Gn07l161afz2ekgK6ursuXL58+fbq/v5+Q22Dd7eSC4uJim82WzWZHR0cNbQ4ARUVFhpYbGRkx5JUsyz6fL5PJxGKxfNYw3ze+Gmc63VpzdubS5p2oY6ephfl03s7R59r/Adbwhfku+iEMAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIzLTAxLTI5VDE2OjEwOjAxKzAwOjAwsVI/LAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMy0wMS0yOVQxNjoxMDowMSswMDowMMAPh5AAAAAgdEVYdHNvZnR3YXJlAGh0dHBzOi8vaW1hZ2VtYWdpY2sub3JnvM8dnQAAABh0RVh0VGh1bWI6OkRvY3VtZW50OjpQYWdlcwAxp/+7LwAAABh0RVh0VGh1bWI6OkltYWdlOjpIZWlnaHQAMTkyQF1xVQAAABd0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAAxOTLTrCEIAAAAGXRFWHRUaHVtYjo6TWltZXR5cGUAaW1hZ2UvcG5nP7JWTgAAABd0RVh0VGh1bWI6Ok1UaW1lADE2NzUwMDE3NDCDbe05AAAAD3RFWHRUaHVtYjo6U2l6ZQAwQkKUoj7sAAAAVnRFWHRUaHVtYjo6VVJJAGZpbGU6Ly8vbW50bG9nL2Zhdmljb25zLzIwMjMtMDEtMjkvMjBiYmVjMjBhNGU3ZTYxY2E3OTU4MmQ5NGFiMDA1OTYuaWNvLnBuZ3ZHsd4AAAAASUVORK5CYII=">
+  <link rel="apple-touch-icon" sizes="60x60" href="data:image/png;base64,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58WxeOMS2v8AGXDfmP3fVl0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDEtMjlUMTY6MTA6MDErMDA6MDCxUj8sAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTAxLTI5VDE2OjEwOjAxKzAwOjAwwA+HkAAAACB0RVh0c29mdHdhcmUAaHR0cHM6Ly9pbWFnZW1hZ2ljay5vcme8zx2dAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAGHRFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAAxOTJAXXFVAAAAF3RFWHRUaHVtYjo6SW1hZ2U6OldpZHRoADE5MtOsIQgAAAAZdEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZOAAAAF3RFWHRUaHVtYjo6TVRpbWUAMTY3NTAwMTc0MINt7TkAAAAPdEVYdFRodW1iOjpTaXplADBCQpSiPuwAAABWdEVYdFRodW1iOjpVUkkAZmlsZTovLy9tbnRsb2cvZmF2aWNvbnMvMjAyMy0wMS0yOS8yMGJiZWMyMGE0ZTdlNjFjYTc5NTgyZDk0YWIwMDU5Ni5pY28ucG5ndkex3gAAAABJRU5ErkJggg==">
+  <link rel="apple-touch-icon" sizes="72x72" href="data:image/png;base64,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">
+  <link rel="apple-touch-icon" sizes="76x76" href="data:image/png;base64,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enqysrKYTCYAIDc312AwfPzxx2+//faGDRsMBkN2dvbEkAiCyOXyyMhIQkdbydls9qJFi+bPn0+lUoVCYURERGhoKJvNnj9/fkREhFAohGGYTCYHBgYuWbLE2dmZTCb7+/svWLCAwWAAABQKRVRUVHh4OIvFgmHY2dl5yZIlXl5eCIJgGBYVFeXn50cmkwEAdDo9KCgoPj4+OjraugcURT08PFasWLFq1aqQkBCCEEEQhUIRGRkpEolgGHZ1dY2MjJTL5S9lJwnxeO7/AAAQBmN0e3Tjl2OJ9uh+6ydiIOEAEZ/gUW8d0LPynL/1y/7Ry42ec+p9V9svM5AzkH9qSCIaIjTEc2rghUHcS4ZLtgJJxFDr169PT0/fuXNnYmKim5ubdccoii5btiw9PT0jI2PHjh0KhYKwOjExMTt37vTy8oIgKCwsLD09PTw8fGo5pxjSycmpoaFheHhYrVb39/dXVlbOmTOHOE8URQnP68GDBzdu3IiIiCCOOjU1lYh1KBRKUVHR0NDQBx98AE1ppmTqIRsbG+/cuePr65uVlWWxWIjgywppMBi2bt0aFhbm6OhIWLbAwMCenp6ysjK5XH779u179+65ubnBMGzTkDdv3mxsbORwOIsXLzYYDEVFRYQrg6Lo0aNHcRwnQjYvLy9C/DgcjlKp7Ojo2Lx5c19fX35+PoVCsWmZtEJyudxVq1YNDw8fOHDAKpP5+fkmkyk7O3vNmjVCodDqGG3fvn1gYKC6unpgYCA+Ph6a6qzeb3JdNRrN7t27GxsbHz9+HB0dTWzaCpmTk5OUlOTu7k5AQhAUEhKi1+stFsu9e/ckEsnU3tWphxQIBGVlZV1dXQ8fPlSpVElJSaNTW9nZ2VqttrOzs62tLSoqyuoJc7nckpISnU739ddfU6lUW7eTFApFIpF4enrK5XIi6TbaGLi4uHh6eioUijlz5hApNusnkUjk6elJDJk2zsALbfpYGV3rKPDbpJ9n3Lo/Svk/a7zJ3v+MqO0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDEtMjlUMTY6MTA6MDErMDA6MDCxUj8sAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTAxLTI5VDE2OjEwOjAxKzAwOjAwwA+HkAAAACB0RVh0c29mdHdhcmUAaHR0cHM6Ly9pbWFnZW1hZ2ljay5vcme8zx2dAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAGHRFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAAxOTJAXXFVAAAAF3RFWHRUaHVtYjo6SW1hZ2U6OldpZHRoADE5MtOsIQgAAAAZdEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZOAAAAF3RFWHRUaHVtYjo6TVRpbWUAMTY3NTAwMTc0MINt7TkAAAAPdEVYdFRodW1iOjpTaXplADBCQpSiPuwAAABWdEVYdFRodW1iOjpVUkkAZmlsZTovLy9tbnRsb2cvZmF2aWNvbnMvMjAyMy0wMS0yOS8yMGJiZWMyMGE0ZTdlNjFjYTc5NTgyZDk0YWIwMDU5Ni5pY28ucG5ndkex3gAAAABJRU5ErkJggg==">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/apple-icon-114x114-c7fe271e.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/apple-icon-120x120-88eb0c24.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/apple-icon-144x144-fe851739.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/apple-icon-152x152-55627e73.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-icon-180x180-fed57c7f.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/android-icon-192x192-25afafe6.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC91BMVEUZGRkWFhkVFRgXGBkWFxkVFhkVFhgYGBkkIxtxaSaBdyiAdyiBeChwZCJJNBVbRRtrVSF1XiR6ZCZ5YyZnViQzLh0XFxkYGRkxLx3ezjX/7jv/7Drcwy6DVA+tex7RnirmtDHzwDb6xzj5yDjTqzNwXSUfHhrdzDX+6jr/7DvbwS6CUw+reh7PnSrksjHxvzX4xjj7yTn/zTn3xjmGbikbGhmEVA+ufB7SnyrotTL0wTb8yjn/zDruwDhaTCL/7TvWvzBfQhR0VRyLayOYeSi2ki7uvjb9yzn/zzulhy3/7TrNvTMmJRsgHxp9Zyf2xjj/zTrOpzMoJRszLR3fszX+zDngtTY0Lh3MvTMkJBsTFBhLQCDqvDb+yznbsjUwKxzSvzFHNxdMOxtZSB9gTyFvXCTAmzD/zju8mTGCUxCqeR7NnCrjsTHxvzb5xzj+zDqEbSiseh7/zjrFnzLQnirmszHywDb6yDj/zDnCnTFFOx/awS95TxGbcB26jijNoS7XqzLQpzKykC5+aCcsKBzPvjIzLBosJhoxKxs0LRwrJxsdHBolJBsYGBgVFRUWFhYhIBllXiF1bSZ0bCVzayNgWiIcHBgXFxgXFxc+Pj57e3tYWFgzMzN0dHRlZWUhISE8PD1zc3YmJik5OTxsbXA7Oz1MTE1ZWVk1NTVXV1c7OztRUVE2NjZ2dnZPT09BQUFQUFBERERAQEBubm7h4eG0tLRbW1vPz8+/v796enrU1NRmZmZnZ2fq6uqmpqaNjY1qamqgoKBkZGSXl5dgYGDQ0NBxcXHCwsKysrJvb2/T09NhYWGvr6+wsLDKysqdnZ1sbGy2trbLy8uYmJje3t6np6c0NDSrq6uenp5zc3Ourq5wcHBLS0sUFBQ5OTlHR0dtbW1dXV1JSUlpaWlMTEyUlJRaWlpSUlJISEg/Pz9iYmIcHByEhISoqKiWlpYbGxujo6N+fn6VlZWFhYWOjo4aGhqkpKRUVFTn5+dTU1MjIyMpKSn///+LMxviAAAAAWJLR0T8PA6jfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAAd0SU1FB+cBHQ4VDGwboF0AAAIKSURBVDjLY2CAA0YmJiZGZhYWVlY2NmYGDMDOwcnFzcPLxy8gKCQsIiomjq6AWUJSSlpKRlZOXkFRSVlFVY0dQ4G6tIamlraOrp6+gaGRsYkpdgVm5haWVgaG1ja2dixYFNg7ODo5u7i6WVu7e3hiM8HL2wdota+fv7t7QGAQOy4FYsEhoe4BYeHMWBRERLKwMEZFx8S6B8TFYzHBPiExKTklNQ3ohvQMX6y+yMzKzsnNM7R2zy8Qwx4OheBwcC8qRrMBpkBWrqS0rLzCurIKzQCoguqa2rr6hsam5hZ0eagvWtvaOzrDu7pZ0GMC7s0eMWZmZkxZhAIfrJLUVOCNTUFvX39vf3/vhImTJk+ZOm16/4xeEARRM3pB8jNmzpo9Z+68+QsWLlq8ZOmymcuXr1i5avWatevWb9i4aQZQQd/mLVu3bd8xZ+eu3Xv27tt/YMvBFfsOHT5y9NCx4ydO9oEUnDx1evX2M6vOnjt/4eKlyweuXL12/fLl9Rdv3Nxx6zZIwYw7h+7em3d627H7DzY8PLTn0eML9x4efnL/6bMnp5/fmQF2ZC8YAx3WC8a9DDOAzoMyUcCMvhkMM/pB0thDovfF3Je9q1/NfzJzw2usCma8efvu/Y0P8z9u/YTdhBmfb335euPb/O8/Hvdjt+LR7Tm9P/fM//Xqdy8OI4CO7O9n6O1HlgcAGLzjFIMn388AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDEtMjlUMTQ6MTU6NDArMDA6MDAVGkRtAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTAxLTI5VDE0OjE1OjQwKzAwOjAwZEf80QAAACB0RVh0c29mdHdhcmUAaHR0cHM6Ly9pbWFnZW1hZ2ljay5vcme8zx2dAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAGHRFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAAxOTJAXXFVAAAAF3RFWHRUaHVtYjo6SW1hZ2U6OldpZHRoADE5MtOsIQgAAAAZdEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZOAAAAF3RFWHRUaHVtYjo6TVRpbWUAMTY3NTAwMTc0MINt7TkAAAAPdEVYdFRodW1iOjpTaXplADBCQpSiPuwAAABWdEVYdFRodW1iOjpVUkkAZmlsZTovLy9tbnRsb2cvZmF2aWNvbnMvMjAyMy0wMS0yOS8yMGJiZWMyMGE0ZTdlNjFjYTc5NTgyZDk0YWIwMDU5Ni5pY28ucG5ndkex3gAAAABJRU5ErkJggg==">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96-85a45fc7.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABelBMVEUZGRkYGBkiIRpdVyNoYSRPQxxQPxxhUCJWSSIqJhsXFxkXGBkyMB3byjX65zqzkCG3hiLotjPvvzfAmzFBOB8zMR3hzzb/7TurjSOWbyDEmy/ywjf/zzqvjy8eHRrgzzb/7juBdyccGhkkIhqihCzdszUxLByKfCc2LBpJPh+6li/YrzUtKRz/7Tq0kSKxgSLjszL8yTn+zTqUeisaGhmwkCKneyHSpjDSqTORdyoqJxuGeicqJBozLRwrJxsaGRnh0DZ/digUFRgXFxcVFRYwLhvVxDP04Td4cCUUFBcYGBg/Pz8+Pj5FRUU0NC9lYT9va0NPTjw7Ozs6Ojo4ODg3Nzc1NTUaGhobGxuFhYV5eXmioqJ3d3eSkpSFhoiUlZaVlZV6enqHh4d2dnaKioqAgIAcHBwxMTEnJyc2NjZCQkJBQUE0NDQWFhYpKSktLS0zMzMoKChSUlKGhoZmZmZiYmJ8fHxKSkorKys5OTkvLy8wMDAjIyP////cmo/zAAAAAWJLR0R9prEQyQAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAAd0SU1FB+cBHQ4VDGwboF0AAADOSURBVBjTY2BgYGBkYmZhZWPn4ORigABuHl4+fgFBIWERbogAl6iYuISklLSMrBxMQF5BUUlZRUZVjRsmIK6uoaklo63DCBPQ1dM3MDQyNoFr0TU1M7ewtGKEC4hb29ja2UP5QAEHBUcnbhjX2dnF1c3dw9MZBLyAAt4+vn7+AYFBwSGh3iFh4QwRkVHRMbFx8QmJSckpKalpDOHpGd4+3pnewZlZmdkhOeEMDF5ezrl5IfnpBYVQM4Agt6i4pLSs3JkBBrwqKquq02vA0gBehiqYHTEOMgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wMS0yOVQxNDoxNTo0MCswMDowMBUaRG0AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDEtMjlUMTQ6MTU6NDArMDA6MDBkR/zRAAAAIHRFWHRzb2Z0d2FyZQBodHRwczovL2ltYWdlbWFnaWNrLm9yZ7zPHZ0AAAAYdEVYdFRodW1iOjpEb2N1bWVudDo6UGFnZXMAMaf/uy8AAAAYdEVYdFRodW1iOjpJbWFnZTo6SGVpZ2h0ADE5MkBdcVUAAAAXdEVYdFRodW1iOjpJbWFnZTo6V2lkdGgAMTky06whCAAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4AAAAXdEVYdFRodW1iOjpNVGltZQAxNjc1MDAxNzQwg23tOQAAAA90RVh0VGh1bWI6OlNpemUAMEJClKI+7AAAAFZ0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL21udGxvZy9mYXZpY29ucy8yMDIzLTAxLTI5LzIwYmJlYzIwYTRlN2U2MWNhNzk1ODJkOTRhYjAwNTk2Lmljby5wbmd2R7HeAAAAAElFTkSuQmCC">
+  <!-- <link rel="manifest" href="./favicons/manifest.json"> -->
+
+
+
+
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Full Stack Web and 3D Immersive Developer with 3D BLENDER Artistic skills. A Three JS developer with Front End Development Skills, from an artistic background. Can create immersive and Godly websites using Libraries and animating Graphics." />
+  <meta name="keywords"
+    content="PRANKUSH GIRI, Prankush Giri, portfolio, web development, 3D development, Three JS, Front End Development, artistic skills" />
+
+
+
+
+
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://prankushgiri.netlify.app/" />
+  <meta property="og:title" content="PRANKUSH GIRI" />
+  <meta property="og:description"
+    content="Full Stack Web and 3D Immersive Developer with 3D BLENDER Artistic skills. A Three JS developer with Front End Development Skills, from an artistic background. Can create immersive and Godly websites using Libraries and animating Graphics." />
+  <meta property="og:image" content="https://prankushgiri.netlify.app/12.04d5a483.jpg" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://twitter.com/PrankushGiri" />
+  <meta property="twitter:title" content="PRANKUSH GIRI" />
+  <meta property="twitter:description"
+    content="Full Stack Web and 3D Immersive Developer with 3D BLENDER Artistic skills. A Three JS developer with Front End Development Skills, from an artistic background. Can create immersive and Godly websites using Libraries and animating Graphics." />
+  <meta property="twitter:image" content="https://prankushgiri.netlify.app/twi.ad801761.png" />
+
+  <meta name="author" content="Prankush Giri" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+
+
+
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="google-site-verification" content="m5aj1GKXSZxySxTAM23-pWYjSzf1U6aYnfMw4UhHqpw" />
+
+  <title>PRANKUSH GIRI</title>
+
+  <script type="module" crossorigin src="/assets/index-8234e252.js"></script>
+  <link rel="stylesheet" href="/assets/index-f963a200.css">
+  <script type="module">import.meta.url;import("_").catch(()=>1);async function* g(){};if(location.protocol!="file:"){window.__vite_is_modern_browser=true}</script>
+  <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+</head>
+
+
+<meta name="google-site-verification" content="m5aj1GKXSZxySxTAM23-pWYjSzf1U6aYnfMw4UhHqpw" />
+<audio id="audiomusic">
+  <source src="/assets/wys-6590e280.mp3" type="audio/mpeg">
+</audio>
+<audio id="clickButton">
+  <source src="/assets/click-cfe97de0.mp3" type="audio/mpeg">
+</audio>
+<audio id="transitionVegeta">
+  <source src="/assets/hexagonIn-96f28ede.ogg" type="audio/mpeg">
+</audio>
+
+
+
+<div class="muteButton-wrapper ">
+  <button class="button-81 buttonHoverSound">MUTE🔊</button>
+</div>
+
+
+<!-- cursor -->
+ 
+<!-- <div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div> -->
+
+
+
+<section class="hiding">
+
+  <div class="preloader">
+    <div class="loader">
+      <img src="/assets/logo-66a7bbe2.gif" alt="PRANKUSHGIRI" width="170" height="170">
+    </div>
+    <button class="btnloading " id="btn">
+      <p class="explore">
+        GO LIVE
+      </p>
+    </button>
+
+</section>
+
+
+
+
+
+
+<body class="coloring" data-scroll-container>
+
+
+  <div class="section screenBlendTest" data-scroll-section>
+    <p class="hero-description1">Welcome to my Portfolio</p>
+    <div class="image-container">
+      <img class="logo" src="/assets/logo-66a7bbe2.gif" alt="PRANKUSHGIRI">
+    </div>
+
+    <div class="hero-section adding">
+      <h1 class="hero-title">PRANKUSH</h1>
+      <h1 class="hero-title">GIRI</h1>
+      <p class="hero-description">IMMERSIVE CREATIVE DEVELOPER | MERN </p>
+      <div class="number-wrapper">
+        <div class="number">_28</div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <div class="divide"></div>
+
+
+
+
+
+
+  <div class="section" data-scroll-section>
+    <h1 class="testingclass"></h1>
+    <div class="hero-section ">
+      <h1 class="hero-title">ABOUT ME</h1>
+      <p class="hero-description2">I'm Prankush, a 3D Frontend developer, having a decade of experience in ART. Are you
+        looking to create a portfolio, business, web-app, or an e-commerce platform? I can help you
+        bring your ideas to life. I will work with you every step of the way to ensure that your website meets
+        all your requirements and exceeds your amamzing expectations.
+        <br>
+        <br>Let's work together to bring your dream WEBSITE AND APPS to life.
+        <br>
+        <br>
+        <!-- <div class="image-wrapper">
+        <img src="./CSS/images/12.jpg" alt="PRANKUSHGIRI" class="imagesAbout">
+        <img src="./CSS/images/13.jpg" alt="PRANKUSHGIRI" class="imagesAbout">
+      </div> -->
+        <br>
+        <br>
+        <br>
+        <br>
+
+      <h1 class="hero-titleExp">WORK <br> EXPERIENCE</h1>
+      <!-- <h1 class="hero-titleExp">EXPERIENCE</h1> -->
+      <br>
+      <br>
+      <h1 class="sub-hero-titleExp">FREELANCE</h1>
+      <h2 class="sub-hero-titleDate">THREE-JS DEVELOPER</h2>
+      <h2 class="sub-hero-titleDate">JUN 23 - PRESENT</h2>
+      <p class="hero-description2">Working as THREE-JS Developer on LOCAL and FOREIGN Market PROJECTS. Elevated user
+        engagement by integrating visualizations from Three.JS resulting in 10% increase in user retention in Web-APP.
+
+      </p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <h1 class="sub-hero-titleExp">STUDIO MESMER</h1>
+      <h2 class="sub-hero-titleDate">FRONTEND DEVELOPER</h2>
+      <h2 class="sub-hero-titleDate">JUN 23 - JUL 23</h2>
+      <p class="hero-description2">Engineered the 404 error page of the website, leveraging Three.JS and Cannon.JS to
+        create an interactive experience.
+        Surveyed a 25% decrease in bounce rates as a result of the engaging 404 page, enhancing user retention.
+        Craft a landing component for an ED-Tech client using REAC,NODE,SASS and by joining Excel as database.
+        <br>
+        <br>
+        <br>
+        <!-- <a target="_blank" class="btn41-43 btn-42 buttonHoverSound" href="https://studiomesmer.com/">VIEW SITE </a> -->
+
+      </p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1 class="sub-hero-titleExp">CAREER WIDTH</h1>
+      <h2 class="sub-hero-titleDate">WEB DEVELOPER INTERN</h2>
+      <h2 class="sub-hero-titleDate">Aug 22 - JAN 23 </h2>
+      <p class="hero-description2">Worked as a Frontend Developer Intern. Helped in re-designing their whole
+        website.
+        Contributed to the frontend development team by creating mockups using FIGMA and Photoshop for color palette.
+        Expedidate fidelity websites with a 95% client satisfaction rate, using HTML, CSS, and JavaScript in production.
+        <br>
+        <br>
+        <!-- <a target="_blank" class="btn41-43 btn-42 buttonHoverSound " href="http://careerwidth.com">VIEW SITE</a> -->
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="divide"></div>
+
+
+
+
+
+
+  <div class="section" data-scroll-section>
+    <h1 class="testingclass2"></h1>
+    <div class="hero-section">
+      <h1 class="hero-titleP">PROJECTS</h1>
+
+
+
+
+
+      <div class="titleProject">
+        <h1 class="hero-titleHead">RUBIKS-SHOP</h1>
+      </div>
+
+      <p class="hero-descriptionL">Full stack immersive product delivery web-application. You can Sign in
+        With Google. VIEW the product in 3D. Place order - online or cash on delivery. Check order status. View
+        your orders. Admin has a dashboard. Can view all income through it. Can see all Users and orders placed. Admin
+        dashboard has
+        Pi-charts of these data. Admin can change order status.</p>
+
+      <a href="https://github.com/prankush-tech/rubiksShop" target="_blank">
+        <div class="image-wrapper2">
+          <img src="/assets/rubiks-1c77194e.png" alt="PRANKUSHGIRI" class="imagesProject">
+        </div>
+        <div class="button-wrapper">
+
+          <button class="button buttonHoverSound">
+            Learn More
+          </button>
+        </div>
+      </a>
+
+
+      <div class="titleProject">
+        <h1 class="hero-titleHead">ZENCY-TOOL</h1>
+      </div>
+
+      <p class="hero-descriptionL">I created a sass plateform. Users can sign in with Google, where they can use daily
+        tools like Drive, Discord, Slack, and Notion in one place. It has an integrated dashboard of all data and a
+        planner area. It has a build in Excalidraw planner to plan and strategize a idea. It has payments systems to
+        upgrade the creadits for unlimited uses. </p>
+
+      <a href="https://github.com/prankush-tech/Agency-Automation-Tools" target="_blank">
+        <div class="image-wrapper2">
+          <img src="/assets/zency-328ef4e4.png" alt="PRANKUSHGIRI" class="imagesProject"
+            style="filter: sepia(0%) hue-rotate(180deg) contrast(90%) brightness(100%) saturate(260%);">
+        </div>
+        <div class="button-wrapper">
+
+          <button class="button buttonHoverSound">
+            Learn More
+          </button>
+        </div>
+      </a>
+
+
+
+
+      <!-- <div class="titleProject">
+        <h1 class="hero-titleHead">NEBULA SHARE</h1>
+      </div>
+
+      <p class="hero-descriptionL">Full-stack social media application to upload, delete, comment, save, and
+        create images. React (Frontend), Backend (Node.js), Sanity, and FireBase (Google Auth). Designed an
+        authentication system, allowing users to sign in using Google sign-in or demo login with limits.
+        Integrated search functionality, enabling users to search for images directly from the search box, providing
+        live, real-time data on the main page, enhancing the user experience, and increasing user retention by 30%.</p>
+
+      <a href="https://github.com/prankush-tech/NEBULA" target="_blank">
+        <div class="image-wrapper2">
+          <img src="./CSS/images/nubula2.png" alt="PRANKUSHGIRI" class="imagesProject">
+        </div>
+        <div class="button-wrapper">
+
+          <button class="button buttonHoverSound">
+            Learn More
+          </button>
+        </div>
+      </a> -->
+
+
+
+
+      <!-- 
+      <div class="titleProject">
+        <h1 class="hero-titleHead">NO-ARCHI</h1>
+      </div>
+
+      <p class="hero-descriptionL">"NoArchi" works over with a special library of JavaScript: Threejs. And this is what makes it different. The problem which it is ought to solve is. That whenever someone builds their houses. They do have a dream house in their minds. But they can't either explain it to the designers or the builders or eventually end up having anything which has been built by the builders. </p>
+
+      <a href="https://worldofgods.netlify.app/" target="_blank">
+        <div class="image-wrapper2">
+          <img src="./CSS/images/noArchi.png" alt="PRANKUSHGIRI" class="imagesProject">
+        </div>
+        <div class="button-wrapper">
+
+          <button class="button buttonHoverSound">
+            Learn More
+          </button>
+        </div>
+      </a> -->
+
+
+
+      <!-- 
+      <div class="titleProject">
+        <h1 class="hero-titleHead">CATCH CLOTHING</h1>
+      </div>
+
+      <p class="hero-descriptionL">Full-stack CLOTHING WEB APPLICATION.🚫🚫🚫 ITS UNDER CONSTRUCTION 🚧🚧🚧🚧🚧</p>
+
+      <a href="https://prankushcloth.netlify.app/" target="_blank">
+        <div class="image-wrapper2">
+          <img src="./CSS/images/catch.png" alt="PRANKUSHGIRI" class="imagesProject">
+        </div>
+        <div class="button-wrapper">
+
+          <button class="button buttonHoverSound">
+            Learn More
+          </button>
+        </div>
+      </a> -->
+
+
+      <div class="titleProject">
+        <h1 class="hero-titleHead">WEB DESIGNS</h1>
+      </div>
+
+      <p class="hero-descriptionL">I try to create Pixel Perfect new Innovative Designs or copy famous websites through
+        my own code. It
+        exposes me to new design trends. This can help me stay up-to-date on the latest trends and learn how to
+        incorporate them into my own work. These are basically my mini projects for practicing DEVELOPMENT. </p>
+      <br>
+      <br>
+      <br>
+
+      <div class="webDesignWrapper">
+        <div class="flexBoxofImageContainer">
+          <a href="https://creative-coding-glsl.netlify.app/" class="imagesWebDesign" target="_blank"><span>
+              <video
+                style="position: absolute; top: 0; left: 0; width: 100%; filter: grayscale(20%); height: 100%; object-fit: cover; filter: sepia(0%) hue-rotate(260deg) brightness(100%) saturate(80%);"
+                playsinline muted loop>
+                <source src="/assets/shaders-64bde742.m4v" type="video/mp4">
+              </video>
+            </span>
+          </a>
+
+          <!-- <a href="https://patrnonus-contact-form.netlify.app/" target="_blank" class="imagesWebDesign"><span>
+              <video
+                style="position: absolute; filter: brightness(250%); top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"
+                playsinline muted loop>
+                <source src="./videos/deer.m4v" type="video/mp4">
+              </video>
+            </span>
+          </a> -->
+
+
+
+          <a href="http://my-room-eight.vercel.app//" target="_blank" class="imagesWebDesign"><span>
+              <img
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(100%) saturate(100%);"
+                src="/assets/room-81918083.png" type="video/mp4" alt="prankush">
+            </span>
+          </a>
+
+
+
+          <a href="https://ragingsea-prankush.netlify.app/" target="_blank" class="imagesWebDesign"><span>
+              <img
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: sepia(0%) hue-rotate(200deg) brightness(100%) saturate(100%);"
+                src="/assets/Sea-e361cb5c.png" type="video/mp4" alt="prankush">
+            </span>
+          </a>
+
+
+          <a href="https://omnitrix-alienforce.netlify.app/" target="_blank" class="imagesWebDesign"><span>
+              <img
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;  filter: sepia(0%) hue-rotate(140deg) brightness(100%) saturate(200%);"
+                src="/assets/Omnitrix-56ff77fe.png" type="video/mp4" alt="prankush">
+            </span>
+          </a>
+
+          <a href="https://prankush-savage.netlify.app/" target="_blank" class="imagesWebDesign"><span>
+              <img style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"
+                src="/assets/game-d1ae6ff9.png" type="video/mp4" alt="prankush">
+            </span>
+          </a>
+
+          <a href="https://kamikaze-prankush.netlify.app/" target="_blank" class="imagesWebDesign"><span>
+              <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"
+                playsinline muted loop>
+                <source src="/assets/anime-84a66b39.mp4" type="video/mp4">
+              </video>
+            </span>
+          </a>
+
+
+
+
+          <a href="https://immersive-testing-prankush.netlify.app/" target="_blank" class="imagesWebDesign"><span>
+              <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"
+                playsinline muted loop>
+                <source src="/assets/bokoko-3e1a88f0.mp4" type="video/mp4">
+              </video>
+            </span>
+          </a>
+
+
+
+          <a href="https://prankush-giri-about.netlify.app/" target="_blank" class="imagesWebDesign"><span>
+              <img
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: sepia(0%) hue-rotate(180deg) brightness(100%) saturate(20%);"
+                src="/assets/meabout-4fa32ee2.png" type="video/mp4" alt="prankush">
+            </span>
+          </a>
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+
+      <!-- <h1 class="hero-titleP">SKILLS</h1>
+
+        <p class="hero-descriptionL">By making these projects, I have acquired the following skills, which help me
+          make immersive websites</p>
+          <div class="image-wrapper2">
+            <img src="./CSS/images/skills.png" alt="PRANKUSHGIRI" class="imagesProject">
+          </div> -->
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="titleProject">
+        <h1 class="hero-titleHead">CUSTOMERS</h1>
+      </div>
+      <br>
+      <br>
+
+      <div class="webDesignWrapper">
+        <div class="flexBoxofImageContainer">
+
+
+
+          <a href="https://advance-react-concepts.netlify.app/" target="_blank" class="imagesWebDesign"><span>
+              <img
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter:saturate(50%) "
+                src="/assets/ecommerce-87e30829.png"  alt="prankush">
+            </span>
+          </a>
+
+
+
+
+
+          <a href="https://279fdb5b-314a-432a-b86a-06a638de6ba5.netlify.app/" target="_blank"
+            class="imagesWebDesign"><span>
+              <img
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: sepia(0%) hue-rotate(100deg) contrast(110%) brightness(90%) saturate(160%); "
+                src="/assets/yajan-fb09cf96.png" alt="prankush">
+            </span>
+          </a>
+
+          <a href="https://y71.ae/" target="_blank"
+            class="imagesWebDesign"><span>
+              <img
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: sepia(0%) hue-rotate(0deg) contrast(110%) brightness(90%) saturate(160%); "
+                src="/assets/y71-43060e1a.png"  alt="prankush">
+            </span>
+          </a>
+
+          <a href="https://aanyagupta.netlify.app" target="_blank"
+            class="imagesWebDesign"><span>
+              <img
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: sepia(0%) hue-rotate(220deg) contrast(150%) brightness(100%) saturate(100%); "
+                src="/assets/anya-95e583b2.png"  alt="prankush">
+            </span>
+          </a>
+
+
+
+          <a href="https://vamagarg.netlify.app/" target="_blank"
+            class="imagesWebDesign"><span>
+              <img
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: sepia(0%) hue-rotate(120deg) contrast(110%) brightness(90%) saturate(50%); "
+                src="/assets/vama-56c6da22.png"  alt="prankush">
+            </span>
+          </a>
+          
+          <a href="https://jcb-test.netlify.app/" target="_blank"
+            class="imagesWebDesign"><span>
+              <img
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: sepia(0%)  contrast(110%) brightness(90%) saturate(10%); "
+                src="/assets/jcb-0eedec57.png" alt="prankush">
+            </span>
+          </a>
+
+          <a href="https://anushkanandi.netlify.app/" target="_blank" class="imagesWebDesign"><span>
+            <img
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: sepia(0%) hue-rotate(220deg) contrast(120%) brightness(100%) saturate(260%);"
+              src="/assets/anu-617f1187.png"  alt="prankush">
+          </span>
+        </a>
+
+        <a href="https://prankush-nebula.netlify.app/login" target="_blank" class="imagesWebDesign"><span>
+          <img
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;  filter: sepia(0%) hue-rotate(220deg) contrast(90%) brightness(100%) saturate(260%); "
+            src="/assets/nebula2-0a723d2e.png"  alt="prankush">
+        </span>
+      </a>
+          
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="divide"></div>
+
+
+
+
+
+
+  <div class="section" data-scroll-section>
+    <h1 class="testingclass3"></h1>
+    <div class="hero-section ">
+      <h1 class="hero-titleP contactHeading">CONTACT ME</h1>
+      <div class="form-wrapper">
+
+
+        <form action="https://formspree.io/f/mwkyzlzj" method="POST" target="_blank">
+          <input name=" name" type="text" class="feedback-input" placeholder="Name" />
+          <input name="email" type="text" class="feedback-input" placeholder="Email" />
+          <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+          <button type="submit"  class="buttonHoverSound buttonSubmitForm" >
+            SUBMIT
+          </button>
+        
+        
+        </form>
+      </div>
+      <div class="flex-socials">
+
+        <a href="https://github.com/prankush-tech" target="_blank">
+
+          <img src="/assets/git-b58bb58a.png" alt="PRANKUSH GIRI" class="socials"></img>
+        </a>
+        <a href="https://www.instagram.com/prankush1999/" target="_blank">
+
+          <img src="/assets/ig-85cd78d6.png" alt="PRANKUSH GIRI" class="socials"></img>
+        </a>
+        <a href="https://www.linkedin.com/in/prankushgiri/" target="_blank">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAMAAAD8CC+4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABUFBMVEVHcEz///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+YITYIAAAAb3RSTlMAHnK71enXvXgkVMvNOjz9cGydaotQ9RyloyYqmwLtRDKFn421rcfDFMHzEPdKNO8w+V6XCAxi4ZVGVuPP0cnxGKeTZoe3gY9As4lIdFp63VxgPpEWEhrTqwQo57lSfE4sZDYKDq8iLjhYfpmhv3Z6TTqdAAAAAWJLR0QB/wIt3gAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAAd0SU1FB+cBHRALDK7iEfgAAALKelRYdFJhdyBwcm9maWxlIHR5cGUgeG1wAABIia1WSxKbMAzd6xQ9gi3ZEhyHYLPrTJc9fp8MxNA4mWamMCGAfk9Psgz9/vmLfuCIMQrJKptNFjSq6EOzJQ7KmtV01iqFrW6Px2Njw/tZk7/JJjkVCalYSALdSWdKky0Gwyy2pJqT4h8ORWDEJpvUsMhqkyw2KQy1eDCNHPxZV60mLiOPADRJN8chyy54qgPJ4Yqho7JkTinpX24gIwjd1WQJZ5AFppu1g6tBi6tuUDTeJMrsJ+6CMK6Ma9kDcCETAxce3SYuHgHyhiIsHDoSwAA1SJx1tgD9GTlUIDvkhLQYMZGII2Nz8zvwFBtaOFB+Rd9CV43UldzZEaei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" alt="PRANKUSH GIRI" class="socials"></img>
+
+        </a>
+        <a href="https://twitter.com/PrankushGiri" target="_blank">
+          <img src="/assets/twi-75878907.png" alt="PRANKUSH GIRI" class="socials"></img>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="infiniteText">
+    <h1>CREATIVE DEVELOPER THREE JS FRONTEND DESIGNER</h1>
+  </div>
+
+
+  <div id="container"></div>
+
+  <!-- <canvas id="renderSurface"></canvas> -->
+
+
+
+  
+  <!-- <script type="module" src="./src/fluid.js"></script> -->
+  <!-- <script src="./src/cursor.js"></script> -->
+
+
+  <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+  <script nomodule crossorigin id="vite-legacy-polyfill" src="/assets/polyfills-legacy-2c67dc9a.js"></script>
+  <script nomodule crossorigin id="vite-legacy-entry" data-src="/assets/index-legacy-1872c426.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+</body>
+
+</html>
